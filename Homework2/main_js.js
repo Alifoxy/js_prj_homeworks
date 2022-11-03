@@ -44,11 +44,11 @@ let book4 = {
 console.log(book4.authors);
 
 let book5 = {
-    title: 'It' ,
-    pageCount: 1116,
-    genre: 'horror',
+    title: 'The Sign of Four' ,
+    pageCount: 129 ,
+    genre: 'detective',
     authors:[
-        {name:'Stephen King', age:'75'}
+        {name:'Arthur Conan Doyle', age:'71'}
     ]
 }
 console.log(book5.authors);
