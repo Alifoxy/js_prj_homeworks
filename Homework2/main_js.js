@@ -17,21 +17,21 @@ let book1 = {
     pageCount: 370,
     genre: 'horror'
 }
-console.log(book1)
+console.log(book1);
 
 let book2 = {
     title: 'The Hound of the Baskervilles' ,
     pageCount: 224,
     genre: 'detective'
 }
-console.log(book2)
+console.log(book2);
 
 let book3 = {
     title: 'To Kill a Mockingbird' ,
     pageCount: 336,
     genre: 'novel'
 }
-console.log(book3)
+console.log(book3);
 
 let book4 = {
     title: 'It' ,
@@ -41,7 +41,7 @@ let book4 = {
         {name:'stephen king', age:'75'}
     ]
 }
-console.log(book4.authors)
+console.log(book4.authors);
 
 let book5 = {
     title: 'It' ,
@@ -51,7 +51,7 @@ let book5 = {
         {name:'Stephen King', age:'75'}
     ]
 }
-console.log(book5.authors)
+console.log(book5.authors);
 
 let book6 = {
     title: 'Gone with the Wind' ,
@@ -61,7 +61,7 @@ let book6 = {
         {name:'Margaret Mitchell', age:'49'}
     ]
 }
-console.log(book6.authors)
+console.log(book6.authors);
 
 let user = [
     {name:'Olga', username:'olichka', password:3452},
