@@ -89,7 +89,7 @@ let users = [
 // побудувати структуру по шаблону
 // Масив:
 //
-let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+//let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 // for (let i=0; i < listOfItems.length; i++) {
 //     let item = listOfItems[i];
 //     document.write(`
