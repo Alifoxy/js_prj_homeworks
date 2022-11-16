@@ -95,41 +95,21 @@
 
 // function list_maker(arr) {
 //     document.write( `<ul>`)
-//   {
+// {
 //     for (const item of arr) {
 //         document.write (`<li>${item}</li>`);
+// document.write(`</ul>`);
 //    }
-//    document.write(`</ul>`);
 // }
 // }
 // list_maker([1,'dog',false]);
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
-// function arr_maker(...arr_of_users) {
-//     document.write( `<div>`)
-//     {
-//     for (const user of arr_of_users) {
-//         document.write(`<div>${user.id} ${user.name} ${user.age}</div>`);
-//     }
-//         document.write(`</div>`);
-// }
-// }
-// arr_maker({id:1,name:'Olga',age:30},{id:2,name:'Boris',age:35},{id:3,name:'Anna',age:36});
+
+
 
 // - створити функцію яка повертає найменьше число з масиву
 
-// function max_value(...arr_of_num) {
-//     let min = arr_of_num[0]
-//     for (const num of arr_of_num) {
-//         if (num < min){
-//             min = num;
-//         }
-//     }
-//     return min;
-//     }
-// max_value(59,40,6,8,125,3,1,-2);
-
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
-
 
