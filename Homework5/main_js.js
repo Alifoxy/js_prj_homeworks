@@ -69,8 +69,7 @@
 //     document.write( `<ul>`)
 //     {
 //         document.write(`<li>${arguments[0]}</li>`)
-//         document.write(`<li>${arguments[0]}</li>`)
-//         document.write(`<li>${arguments[0]}</li>`)
+//
 //     }
 //     document.write(`</ul>`)
 //
