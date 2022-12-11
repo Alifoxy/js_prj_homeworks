@@ -89,6 +89,29 @@
 // console.log(filtered);
 
 // описати колоду карт
+
+const card_suits = [
+    {card_suit: 'heart', colour: 'red'},
+    {card_suit: 'diamond', colour: 'red'},
+    {card_suit: 'clubs', colour: 'black'},
+    {card_suit: 'spade', colour: 'black'},
+]
+const card_names = [6,7,8,9,10,'jack','queen','king','ace'];
+const deck = [];
+
+for (const suit of card_suits) {
+    for (const name of card_names) {
+        const card = {suit:suit.card_suit,
+                      name:name,
+                      colour:suit.colour
+        }
+        deck.push(card)
+    }
+}
+deck.push({suit:'joker', name:'none', colour:'red'});
+deck.push({suit:'joker', name:'none', colour:'black'});
+console.log(deck);
+
 // - знайти піковий туз
 // - всі шістки
 // - всі червоні карти
