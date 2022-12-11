@@ -91,19 +91,19 @@
 // описати колоду карт
 
 const card_suits = [
-    {card_suit: 'heart', colour: 'red'},
-    {card_suit: 'diamond', colour: 'red'},
-    {card_suit: 'clubs', colour: 'black'},
-    {card_suit: 'spade', colour: 'black'},
+    {suit: 'heart', colour: 'red'},
+    {suit: 'diamond', colour: 'red'},
+    {suit: 'clubs', colour: 'black'},
+    {suit: 'spade', colour: 'black'},
 ]
 const card_names = [6,7,8,9,10,'jack','queen','king','ace'];
 const deck = [];
 
-for (const suit of card_suits) {
-    for (const name of card_names) {
-        const card = {suit:suit.card_suit,
-                      name:name,
-                      colour:suit.colour
+for (const card_suit of card_suits) {
+    for (const card_name of card_names) {
+        const card = {suit:card_suit.suit,
+                      name:card_name,
+                      colour:card_suit.colour
         }
         deck.push(card)
     }
@@ -113,11 +113,25 @@ deck.push({suit:'joker', name:'none', colour:'black'});
 console.log(deck);
 
 // - знайти піковий туз
+let filter_spade_ace = deck.filter(value => value.suit === 'spade' && value.name === 'ace');
+console.log(filter_spade_ace);
+
 // - всі шістки
+let filter_six = deck.filter(value => value.name === 6);
+console.log(filter_six);
+
 // - всі червоні карти
+let filter_red = deck.filter(value => value.colour === 'red');
+console.log(filter_red);
+
 // - всі буби
+let filter_diamond = deck.filter(value => value.suit === 'diamond');
+console.log(filter_diamond);
+
 // - всі трефи від 9 та більше
-//
+let filter_clubs_nine_plus = deck.filter(value => value.suit === 'clubs' && value.name >= 9 ||
+    value.suit === 'clubs' && typeof value.name === "string");
+console.log(filter_clubs_nine_plus);
 //
 // {
 //     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
