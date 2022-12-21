@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main_style.css">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  fetch('https://jsonplaceholder.typicode.com/users')
+          .then((response) => response.json())
+          .then(users => {
+            let div = document.createElement('div');
+            div.setAttribute('class','main_div');
+            let ul = document.createElement('ul');
+            for (const user of users) {
+              let item = document.createElement('li');
+              item.innerText = `${user.id} ${user.name}`;
+
+              let link = document.createElement('a');
+              link.href = `user_details.html?id=${user.id}`;
+              link.innerText = 'info of user';
+              ul.append(item,link);
+
+            }
+            div.appendChild(ul);
+            document.body.appendChild(div);
+          });
+</script>
+</body>
+</html>
