@@ -15,8 +15,11 @@
           .then(users => {
             let div = document.createElement('div');
             div.setAttribute('class','main_div');
-            let ul = document.createElement('ul');
+
             for (const user of users) {
+              let div2 = document.createElement('div');
+              div2.setAttribute('class','inn_div');
+              let ul = document.createElement('ul');
               let item = document.createElement('li');
               item.innerText = `${user.id} ${user.name}`;
 
@@ -24,9 +27,10 @@
               link.href = `user_details.html?id=${user.id}`;
               link.innerText = 'info of user';
               ul.append(item,link);
-
+              div2.append(ul);
+              div.append(div2);
             }
-            div.appendChild(ul);
+
             document.body.appendChild(div);
           });
 </script>

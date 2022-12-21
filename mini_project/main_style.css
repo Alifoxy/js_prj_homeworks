@@ -1,3 +1,19 @@
 .main_div{
+    width: 580px;
+    height: 450px;
     background: darkseagreen;
+    color: darkslategray;
+    font-family: "Book Antiqua", sans-serif ;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+.inn_div{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 20px 20px 0px 20px;
+    width: 250px;
+    height: 60px;
+    background: aquamarine;
+    border-radius: 50px;
+
 }
