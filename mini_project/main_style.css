@@ -88,7 +88,7 @@
     text-align: match-parent;
 }
 .main3 {
-    width: 1400px;
+    width: 1500px;
     height: auto;
     padding: 10px 10px 10px 10px ;
     background: lavender;
@@ -123,12 +123,14 @@
     border-color:plum;
     border-width: 5px;
 }
+
 .cmsd {
     display: flex;
-    justify-content: stretch;
+    justify-content: space-evenly;
 }
+
 .cmd {
-    width: 400px;
+    width: 300px;
     box-sizing: border-box;
     padding: 10px 10px 10px 10px ;
     margin: 20px 10px 20px 10px;
