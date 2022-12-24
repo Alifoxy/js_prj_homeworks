@@ -22,7 +22,7 @@
     border-radius: 50px;
 }
 .main2{
-    width: 1120px;
+    width: 1600px;
     height: auto;
     padding: 10px 10px 10px 10px ;
     background: lightblue;
@@ -46,6 +46,7 @@
 }
 
 .inf2 {
+    width: auto;
     box-sizing: border-box;
     margin: 20px 0 20px 0;
     padding: 10px 10px 10px 10px;
@@ -57,20 +58,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 280px;
-    width: 1120px;
+    height: 250px;
+    width: auto;
     box-sizing: border-box;
     margin: 10px 0 10px 0;
     padding: 10px 10px 10px 10px;
 }
 
-.pbd {
-    width: 1120px;
-    box-sizing: border-box;
-    margin-right: 20px;
-}
 .pb {
-    width: 1100px;
+    width: 1580px;
     height: 40px;
     color: darkslategray;
     font-family: "Cinzel Black", sans-serif ;
@@ -79,16 +75,15 @@
 }
 .pd {
     padding: 10px 10px 10px 10px;
-    margin-right: 17px;
-    width: 200px;
-    height: 120px;
+    width: 300px;
+    height: 100px;
     box-sizing: border-box;
     background: paleturquoise;
     border-radius: 30px;
     text-align: match-parent;
 }
 .main3 {
-    width: 1500px;
+    width: 1600px;
     height: auto;
     padding: 10px 10px 10px 10px ;
     background: lavender;
