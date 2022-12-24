@@ -28,7 +28,26 @@
 //     Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)
 
 
-
+// let link_btn = document.createElement('a');
+// link_btn.setAttribute('class','link_b');
+// link_btn.href = `'https://jsonplaceholder.typicode.com/users/USER_ID/posts'`;
+// link_btn.innerText = 'info of user';
+//
+//
+// let post_show_btn = document.createElement('button');
+// post_show_btn.setAttribute('class','pbtn');
+// post_show_btn.innerText = 'post of current user';
+// post_show_btn.addEventListener("onclick", btn_func);
+// function btn_func(posts) {
+//     for (const p_item in posts) {
+//         let post = document.createElement('div');
+//         post.setAttribute('class', 'pst1');
+//         post.innerText = `${p_item} ${posts[p_item]}`;
+//         pdiv.append(post);
+//     }
+// }
+// pdiv.append(post_show_btn);
+// });
 
 
 

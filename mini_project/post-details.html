@@ -9,6 +9,111 @@
     <link rel="stylesheet" href="main_style.css">
 </head>
 <body>
+<script>
+let url = new URL(location.href);
+console.log(url);
+let post_id = url.searchParams.get('post_id');
+console.log(post_id);
 
+fetch(`https://jsonplaceholder.typicode.com/posts/${post_id}`)
+    .then((response) => response.json())
+    .then(post_det => {
+        let main_div3 = document.createElement('div');
+        main_div3.setAttribute('class','main3');
+        document.body.appendChild(main_div3);
+
+        let inner_div4 = document.createElement('div');
+        inner_div4.setAttribute('class','inf3');
+
+        let heading4 = document.createElement('h3');
+        heading4.innerText = 'details of post';
+        heading4.setAttribute('class','hd');
+        let det_out_div = document.createElement('div');
+        det_out_div.setAttribute('class','dod');
+        inner_div4.append(heading4, det_out_div);
+
+        let inner_div5 = document.createElement('div');
+        inner_div5.setAttribute('class','inf4');
+
+        let heading5 = document.createElement('h3');
+        heading5.innerText = 'comments of post';
+        heading5.setAttribute('class','hd');
+        inner_div5.appendChild(heading5);
+
+        main_div3.append(inner_div4, inner_div5)
+
+        for (const det in post_det) {
+
+            let det_div = document.createElement('div');
+
+                if (typeof post_det[det] !== 'object') {
+                    det_div.innerText = `${det} ${post_det[det]}`;
+                } else {
+                    det_div.innerText = `${det} :`
+
+                    for (const inn_det in post_det[det] ) {
+                        let in_det_div = document.createElement('div');
+
+                        if (typeof post_det[det][inn_det] !== 'object') {
+                            in_det_div.innerText = `${inn_det} ${post_det[det][inn_det]}`;
+                        } else {
+                            in_det_div.innerText = `${inn_det} :`
+
+                            for (const det_el in post_det[det][inn_det]) {
+                                let in_det_div2 = document.createElement('div');
+
+                                if (typeof post_det[det][inn_det][det_el] !== 'object') {
+                                    in_det_div2.innerText = `${det_el} ${post_det[det][inn_det][det_el]}`;
+                                }
+                                in_det_div.appendChild(in_det_div2);
+                            }
+                        }
+                        det_div.appendChild(in_det_div);
+                    }
+                }
+                det_out_div.appendChild(det_div);
+            }
+        fetch(`https://jsonplaceholder.typicode.com/posts/${post_id}/comments`)
+            .then(com_info => com_info.json())
+            .then(comments => {
+                let comments_div = document.createElement('div');
+                comments_div.setAttribute('class','cmsd');
+                inner_div5.appendChild(comments_div);
+
+                for (const com in comments) {
+                    let com_div = document.createElement('div');
+                    com_div.setAttribute('class','cmd')
+
+                        if (typeof comments[com] !== 'object') {
+                            com_div.innerText = `${com} ${comments[com]}`;
+                        } else {
+                            com_div.innerText = `${com} :`
+
+                            for (const elem_com in comments[com]) {
+                                let in_com_div = document.createElement('div');
+
+                                if (typeof comments[com][elem_com] !== 'object') {
+                                    in_com_div.innerText = `${elem_com} ${comments[com][elem_com]}`;
+                                } else {
+                                    in_com_div.innerText = `${elem_com} :`
+
+                                    for (const in_el_com in comments[com][elem_com] ) {
+                                        let in_com_div2 = document.createElement('div');
+
+                                        if (typeof comments[com][elem_com][in_el_com] !== 'object') {
+                                            in_com_div2.innerText = `${in_el_com} ${comments[com][elem_com][in_el_com]}`;
+                                        }
+                                        in_com_div.appendChild(in_com_div2);
+                                    }
+                                }
+                                com_div.appendChild(in_com_div);
+                            }
+                        }
+                        comments_div.appendChild(com_div);
+                    }
+            });
+    });
+
+</script>
 </body>
 </html>

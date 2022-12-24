@@ -1,19 +1,132 @@
-.main_div{
+.main1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 580px;
     height: 450px;
-    background: darkseagreen;
+    padding-top: 20px;
+    background: cadetblue  ;
     color: darkslategray;
     font-family: "Book Antiqua", sans-serif ;
     box-sizing: border-box;
     border-radius: 30px;
+    border-style: dashed;
+    border-color: aquamarine;
+    border-width: 5px;
 }
-.inn_div{
-    display: inline-block;
+.inn_div {
     box-sizing: border-box;
-    margin: 20px 20px 0px 20px;
     width: 250px;
-    height: 60px;
+    height: 65px;
     background: aquamarine;
     border-radius: 50px;
+}
+.main2{
+    width: 1120px;
+    height: auto;
+    padding: 10px 10px 10px 10px ;
+    background: lightblue;
+    color: darkslategray;
+    font-family: "Book Antiqua", sans-serif ;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: lightcyan;
+    border-width: 5px;
+}
+.inf{
+    box-sizing: border-box;
+    padding: 10px 20px 0 20px;
+}
+
+.hd {
+    font-family: "Cinzel Black", sans-serif ;
+    font-size: large;
+    box-sizing: border-box;
+    padding: 0 20px 0 20px;
+}
+
+.inf2 {
+    box-sizing: border-box;
+    margin: 20px 0 20px 0;
+    padding: 10px 10px 10px 10px;
+    background: lightcyan;
+    border-radius: 20px;
+}
+
+.apd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 280px;
+    width: 1120px;
+    box-sizing: border-box;
+    margin: 10px 0 10px 0;
+    padding: 10px 10px 10px 10px;
+}
+
+.pbd {
+    width: 1120px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+.pb {
+    width: 1100px;
+    height: 40px;
+    color: darkslategray;
+    font-family: "Cinzel Black", sans-serif ;
+    font-size: large;
+
+}
+.pd {
+    padding: 10px 10px 10px 10px;
+    margin-right: 17px;
+    width: 200px;
+    height: 120px;
+    box-sizing: border-box;
+    background: paleturquoise;
+    border-radius: 30px;
+    text-align: match-parent;
+}
+.main3 {
+    width: 1000px;
+    height: auto;
+    padding: 10px 10px 10px 10px ;
+    background: lavender;
+    color: midnightblue;
+    font-family: "Book Antiqua", sans-serif ;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: plum;
+    border-width: 5px;
+}
+.inf3 {
+    width: 960px;
+    height: auto;
+    padding: 10px 10px 10px 10px ;
+    margin: 20px 10px 20px 10px;
+    background-color: lavenderblush;
+    border-radius: 30px;
+}
+.inf4{
+    width: 960px;
+    height: auto;
+    margin: 0 10px 20px 10px;
+    padding: 10px 10px 10px 10px ;
+    background-color: lightsteelblue;
+    border-radius: 30px;
+}
+
+.dod {
+    padding: 10px 10px 10px 10px ;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color:plum;
+    border-width: 5px;
+}
+.cmd {
+    padding: 10px 10px 10px 10px ;
+    margin: 20px 10px 20px 10px;
+    border-radius: 30px;
+    background-color: azure;
 
 }
