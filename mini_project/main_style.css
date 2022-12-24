@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 580px;
+    width: 840px;
     height: 450px;
     padding-top: 20px;
     background: cadetblue  ;
@@ -16,7 +16,7 @@
 }
 .inn_div {
     box-sizing: border-box;
-    width: 250px;
+    width: 400px;
     height: 65px;
     background: aquamarine;
     border-radius: 50px;
@@ -88,7 +88,7 @@
     text-align: match-parent;
 }
 .main3 {
-    width: 1000px;
+    width: 1400px;
     height: auto;
     padding: 10px 10px 10px 10px ;
     background: lavender;
@@ -100,7 +100,7 @@
     border-width: 5px;
 }
 .inf3 {
-    width: 960px;
+    width: auto;
     height: auto;
     padding: 10px 10px 10px 10px ;
     margin: 20px 10px 20px 10px;
@@ -108,7 +108,7 @@
     border-radius: 30px;
 }
 .inf4{
-    width: 960px;
+    width: auto;
     height: auto;
     margin: 0 10px 20px 10px;
     padding: 10px 10px 10px 10px ;
@@ -123,9 +123,16 @@
     border-color:plum;
     border-width: 5px;
 }
+.cmsd {
+    display: flex;
+    justify-content: stretch;
+}
 .cmd {
+    width: 400px;
+    box-sizing: border-box;
     padding: 10px 10px 10px 10px ;
     margin: 20px 10px 20px 10px;
+    text-align: match-parent;
     border-radius: 30px;
     background-color: azure;
 
